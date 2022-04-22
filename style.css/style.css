@@ -21,7 +21,55 @@ body {
   list-style: none;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding-left: 0;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  width: 1200;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 1px solid red;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 /*--------------------------------------------- headr -----------------------------------------------*/
+.header{
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
 
 .headr-logo {
   font-family: "Raleway";
@@ -77,8 +125,10 @@ body {
 }
 /* -----------------------------------------------hero-------------------------------------------------- */
 
-.hero{
+.hero {
   background: var(--dark-grey);
+  padding-top: 200px;
+  padding-bottom: 280px;
 }
 
 .hero-title {
@@ -88,6 +138,8 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
+  /* width: 696px;
+  margin: 0 auto; */
 }
 .hero-btn {
   font-family: inherit;
@@ -103,26 +155,18 @@ body {
   background: var(--blue-button);
 }
 /* ---------------------------------------------description ------------------------------------------------- */
-/* стилі заголовка що скривається */
-
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
+.description{
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
+
 .description-title {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primery-text-color);
+  margin-bottom: 10px;
 }
 .description-text {
   font-size: 14px;
@@ -131,20 +175,29 @@ body {
   color: var(--grey);
 }
 /* ------------------------------------------------our-works--------------------------------------------------- */
-
+.our-works{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .our-works-main-title {
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--primery-text-color);
+  margin-bottom: 50px;
 }
 /* ---------------------------------------------------OurTeam----------------------------------------------- */
+.OurTeam{
+  padding-top: 94px;
+  padding-bottom: 94px; 
+}
 
 .OurTeam-main-title {
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--primery-text-color);
+  margin-bottom: 50px;
 }
 .OurTeam-title {
   font-weight: 500;
@@ -152,6 +205,8 @@ body {
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--primery-text-color);
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 .OurTeam-text {
   font-weight: 400;
@@ -162,8 +217,10 @@ body {
 }
 /* -------------------------------------------------footer-------------------------------------------------- */
 
-.footer{
+.footer {
   background: var(--dark-grey);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-logo {
