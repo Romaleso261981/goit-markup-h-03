@@ -46,11 +46,11 @@ img {
 }
 
 .container {
-  width: 1200;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 .visually-hidden {
   position: absolute;
@@ -171,6 +171,7 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding: 10px 32px;
   font-family: inherit;
   font-weight: 700;
   background: var(--blue);
@@ -331,6 +332,32 @@ img {
   color: var(--primery-white-color);
 }
 /* ----------------------------------------------portfolio-------------------------------------------- */
+.portfolio .container{
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 94px;
+
+}
+
+.navigation-list{
+  display: flex;
+  text-align: center;
+  margin-bottom: 34px;
+  padding-left: 531px;
+  padding-right: 458px;
+}
+
+.navigation-item{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+.navigation-item:not(:last-child){
+  margin-right: 8px;
+}
 
 .navigation-btn {
   font-family: inherit;
@@ -351,7 +378,31 @@ img {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
+
+.portfolio-list{
+  flex-wrap: wrap;
+  display: flex;
+  margin-right: -30px;
+  margin-bottom: -30px;
+}
+
+.portfolio-item{
+  /* outline: 1px solid red; */
+  flex-basis: calc((100% - 30px) / 3);
+  margin-bottom: 30px;
+}
+
+.portfolio-div{
+  /* background-color: aqua; */
+  /* outline: 1px solid #188ce8; */
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+}
+
 .portfolio-title {
+  margin-bottom: 4px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
